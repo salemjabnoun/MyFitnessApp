@@ -76,6 +76,20 @@ flutter:
     - assets/back-lat-pulldown.png
     - assets/back-lever-seated-row.png
     - assets/back-seated-cable-row.png
+    - assets/back-hyperextension.png
+    - assets/triceps-bench-dip.png
+    - assets/triceps-extension.png
+    - assets/triceps-pushdown.png
+    - assets/biceps-hammer-curl.png
+    - assets/alternate-biceps-curl.png
+    - assets/leg-barbell-squat.png
+    - assets/leg-dumbbell-lunges.png
+    - assets/leg-extension.png
+    - assets/leg-press.png
+    - assets/lying-leg-curl.png
+    - assets/seated-calf-raise.png
+    - assets/dumbbell-calf-raise.png
+    - assets/abs-front-plank.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

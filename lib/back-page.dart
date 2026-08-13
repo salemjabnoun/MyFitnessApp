@@ -45,6 +45,13 @@ class BackPage extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
             const SizedBox(height: 40),
+            MyCard(imPath: 'assets/back-hyperextension.png'),
+            const SizedBox(height: 15),
+              Text(
+                'Hyperextension',
+                style: TextStyle(color: Colors.white),
+              ),
+            const SizedBox(height: 40),
           ],
         ),),
       ),
