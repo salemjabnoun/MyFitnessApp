@@ -3,6 +3,10 @@ import 'shoulders-page.dart';
 import 'back-page.dart';
 import 'chest-page.dart';
 import 'leg-page.dart';
+import 'triceps-page.dart';
+import 'biceps-page.dart';
+import 'abs-page.dart';
+import 'calves-page.dart';
 import 'package:flutter/cupertino.dart';
 
 void main() {
@@ -78,9 +82,29 @@ class Tabs extends StatelessWidget {
             child: Image.asset('assets/back-icon.png', height: 55, width: 55),
           ),
           const SizedBox(width: 5),
-          Image.asset('assets/biceps-icon.png', height: 55, width: 55),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                CupertinoPageRoute(builder: (context) => BicepsPage()),
+              );
+            },
+            child: Image.asset('assets/biceps-icon.png', height: 55, width: 55),
+          ),
           const SizedBox(width: 5),
-          Image.asset('assets/triceps-icon.png', height: 55, width: 55),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                CupertinoPageRoute(builder: (context) => TricepsPage()),
+              );
+            },
+            child: Image.asset(
+              'assets/triceps-icon.png',
+              height: 55,
+              width: 55,
+            ),
+          ),
           const SizedBox(width: 5),
           GestureDetector(
             onTap: () {
@@ -92,9 +116,25 @@ class Tabs extends StatelessWidget {
             child: Image.asset('assets/legs-icon.png', height: 55, width: 55),
           ),
           const SizedBox(width: 5),
-          Image.asset('assets/calves-icon.png', height: 55, width: 55),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                CupertinoPageRoute(builder: (context) => CalvesPage()),
+              );
+            },
+            child: Image.asset('assets/calves-icon.png', height: 55, width: 55),
+          ),
           const SizedBox(width: 5),
-          Image.asset('assets/abs-icon.png', height: 55, width: 55),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                CupertinoPageRoute(builder: (context) => AbsPage()),
+              );
+            },
+            child: Image.asset('assets/abs-icon.png', height: 55, width: 55),
+          ),
         ],
       ),
     );
@@ -169,7 +209,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               const SizedBox(height: 150),
               Text(
-                '"Strive for Progress, not Perfection."',
+                '"Strive for Progress,\nnot Perfection."',
                 style: TextStyle(fontSize: 30, color: Colors.redAccent),
                 textAlign: TextAlign.center,
               ),

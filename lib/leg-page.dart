@@ -39,7 +39,7 @@ class LegPage extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
             const SizedBox(height: 40),
-            MyCard(imPath: 'leg-barbell-squat.png'),
+            MyCard(imPath: 'assets/leg-barbell-squat.png'),
             const SizedBox(height: 15),
               Text(
                 'Barbell Squat',
