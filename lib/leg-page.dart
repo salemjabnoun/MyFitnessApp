@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/main.dart';
 
-
-class ShouldersPage extends StatelessWidget {
-  const ShouldersPage({super.key});
+class LegPage extends StatelessWidget {
+  const LegPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,57 +21,50 @@ class ShouldersPage extends StatelessWidget {
             Tabs(),
             const SizedBox(height: 18),
             Text(
-                'Shoulders Exercises :',
+                'Leg Exercises :',
                 style: TextStyle(color: Colors.white, fontSize: 22),
               ),
             const SizedBox(height:15),
-            MyCard(imPath: 'assets/shoulders-press.png'),
+            MyCard(imPath: 'assets/leg-press.png'),
             const SizedBox(height: 15),
               Text(
-                'Shoulders Press',
+                'Leg Press',
                 style: TextStyle(color: Colors.white),
               ),
             const SizedBox(height: 40),
-            MyCard(imPath: 'assets/shoulders-lateral-raises.png'),
+            MyCard(imPath: 'assets/leg-extension.png'),
             const SizedBox(height: 15),
               Text(
-                'Shoulders Lateral Raises',
+                'Leg Extension',
                 style: TextStyle(color: Colors.white),
               ),
             const SizedBox(height: 40),
-            MyCard(imPath: 'assets/shoulders-front-raises.png'),
+            MyCard(imPath: 'leg-barbell-squat.png'),
             const SizedBox(height: 15),
               Text(
-                'Shoulders Front Raises',
+                'Barbell Squat',
                 style: TextStyle(color: Colors.white),
               ),            
             const SizedBox(height: 40),
-            MyCard(imPath: 'assets/shoulders-upright-row.png'),
+            MyCard(imPath: 'assets/leg-dumbbell-lunges.png'),
             const SizedBox(height: 15),
               Text(
-                'Shoulders Upright Row',
+                'Dumbbell Lunges',
                 style: TextStyle(color: Colors.white),
               ),
             const SizedBox(height: 40),
-            MyCard(imPath: 'assets/shoulders-rear-delt-flys.png'),
+            MyCard(imPath: 'assets/leg-sumo-squat.png'),
             const SizedBox(height: 15),
               Text(
-                'Shoulders Rear Delt Flys',
+                'Sumo Squat',
                 style: TextStyle(color: Colors.white),
               ),
               const SizedBox(height: 40),
-            MyCard(imPath: 'assets/shoulders-cable-one-arm-lateral-raise.png'),
+            MyCard(imPath: 'assets/lying-leg-curl.png'),
             const SizedBox(height: 15),
               Text(
-                'Cable One-Arm Lateral Raise',
+                'Lying Leg Curl',
                 style: TextStyle(color: Colors.white),),
-            const SizedBox(height: 40),
-            MyCard(imPath: 'assets/shrug.png'),
-            const SizedBox(height: 15),
-              Text(
-                'Shrug',
-                style: TextStyle(color: Colors.white),
-              ),
           ],
         ),),
       ),

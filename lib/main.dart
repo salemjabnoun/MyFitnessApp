@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'shoulders-page.dart';
 import 'back-page.dart';
 import 'chest-page.dart';
+import 'leg-page.dart';
 import 'package:flutter/cupertino.dart';
 
 void main() {
@@ -81,7 +82,15 @@ class Tabs extends StatelessWidget {
           const SizedBox(width: 5),
           Image.asset('assets/triceps-icon.png', height: 55, width: 55),
           const SizedBox(width: 5),
-          Image.asset('assets/legs-icon.png', height: 55, width: 55),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                CupertinoPageRoute(builder: (context) => const LegPage()),
+              );
+            },
+            child: Image.asset('assets/legs-icon.png', height: 55, width: 55),
+          ),
           const SizedBox(width: 5),
           Image.asset('assets/calves-icon.png', height: 55, width: 55),
           const SizedBox(width: 5),
